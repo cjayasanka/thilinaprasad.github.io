@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>BMI Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="Icon.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bmi.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body background="img/background.jpg">
+
+        <img src="img/Title.png" id="mainTitle">
+        <div id="allApp">
+        <img src="img/Logo.png" id="mainLogo">
+        <div id="block"></div>
+        <div id="appSection">
+            <b>Mass&nbsp;&nbsp;&nbsp;:&nbsp;</b><input type="number" min="0" id="mass" class="mass" ><br>
+            <input type="radio" id="kg" class="mass" name="mass" checked>&nbsp;<label class="units"><b>kg</b></label>&nbsp;
+            <input type="radio" id="pou" class="mass" name="mass">&nbsp;<label class="units"><b>pound</b></label><br>
+
+            <b>Height&nbsp;:&nbsp;</b><input type="number" min="0" id="height" class="height" ><br>
+            <input type="radio" id="cm" class="height" name="height" checked>&nbsp;<label class="units"><b>cm</b></label>
+            <input type="radio" id="inch" class="height" name="height">&nbsp;<label class="units"><b>inch</b></label><br>
+            <hr>
+            <br>
+            <label class="resultLable"><b>BMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label><div  id="bmi" class="result"></div><br>
+            <label class="resultLable"><b>Status&nbsp;:&nbsp;</b></label><div  id="status" class="result" ></div><br>
+            <!--button  id="calc" class="app"></button>
+            <button  id="reset" class="app"></button-->
+            <button class="button"  id="calc" style="vertical-align:middle" title="Calculate BMI"><span>Calculate</span></button>
+            <button class="button" id="reset" style="vertical-align:middle" title="Reset All Fields"><span>Reset</span></button>
+            <hr>
+        </div>
+        </div>
+        <div id="sideMenu">
+            <a href="https://www.facebook.com/thilina.prashad" target="_blank"><img src="img/Icons/Face.png" id="facebook" class="sideMenu" title="Facebook"></a><br><br>
+            <a href="https://plus.google.com/u/0/102854325861453558387" target="_blank"><img src="img/Icons/gPlus.png" id="gplus" class="sideMenu" title="Google+"></a><br><br>
+                <a href="https://www.instagram.com/thilina.prashad/" target="_blank"><img src="img/Icons/Instra.png"id="instagram" class="sideMenu" title="Instragram"></a><br><br>
+                    <a href="https://www.linkedin.com/in/thilina-jayathilaka-32134911b/" target="_blank"><img src="img/Icons/Linked.png" id="linkedin" class="sideMenu" title="LinkedIn"></a><br><br>
+                        <a href="https://twitter.com/prashad25" target="_blank"> <img src="img/Icons/Twitter.png" id="twitter" class="sideMenu" title="Twitter"></a><br><br>
+                                <a href="tel:+94714843849" ><img src="img/Icons/phone.png" id="phone" class="sideMenu" title="Call"></a><br><br>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=15a6204c7ce8b456" target="_blank"><img src="img/Icons/Gmail.png" id="mail" class="sideMenu" title="Gmail"></a>
+        </div>
+        <a href="https://drive.google.com/uc?export=download&confirm=QXra&id=0B25qN4nP2BURRWtYdWtaRi1id28" ><img src="img/Down1.png" title="Download BMI Offline Calculator " id="download"></a>
+        <img src="img/Emo/E1.png" class="emo" id="E1">
+        <img src="img/Emo/E2.png"  class="emo" id="E2">
+        <img src="img/Emo/E3.png" class="emo" id="E3">
+        <img src="img/Emo/E4.png" class="emo" id="E4">
+        <img src="img/Emo/E5.png" class="emo" id="E5">
+        <img src="img/Emo/E6.png" class="emo" id="E6">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/app/app.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
