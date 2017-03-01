@@ -81,7 +81,7 @@ body #appSection{
     line-height: 0px;
     position: relative;
     left: 70px;
-    top: -20px;
+    top: 0px;
 }
 
 .button span {
@@ -269,7 +269,7 @@ body #appSection{
 .emo{
     z-index: 5;
     position: absolute;
-    top: 255px;
+    top: 280px;
     left: 540px;
     zoom: 155%;
 
